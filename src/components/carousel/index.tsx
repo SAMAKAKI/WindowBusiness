@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 type CarouselProps = {
-  ref?: React.RefObject<HTMLDivElement>,
+  ref?: React.Ref<HTMLDivElement>,
   images?: string[],
   slides?: Slides[],
   slideWidth?: number,
@@ -18,8 +18,8 @@ type CarouselProps = {
 
 export const Carousel: React.FC<CarouselProps> = ({ref, images = [], slides = [], slideWidth = 0, visibleSlides = 1, version = 1}) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const carouselRef = useRef<HTMLDivElement | null>(null);
-  const activeRef = useRef<HTMLDivElement | null>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const activeRef = useRef<HTMLDivElement>(null);
   const maxIndex = slides?.length - visibleSlides;
 
    useEffect(() => {
