@@ -1,0 +1,8 @@
+export { Menu } from './menu'
+export { Welcome } from './welcome'
+export { Assortment } from './assortment'
+export { AssortmentDetails } from './assortmentDetails'
+export { Carousel } from './carousel'
+export { About } from './about'
+export { Contact } from './contact'
+export { Footer } from './footer'

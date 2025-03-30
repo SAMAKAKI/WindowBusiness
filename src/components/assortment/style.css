@@ -1,0 +1,40 @@
+.assortment-wrapper{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  position: relative;
+}
+
+.assortment-logo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+  z-index: 10;
+}
+
+.assortment-logo h2 {
+  cursor: pointer;
+  transition: transform ease-in-out .1s;
+  -webkit-transition: transform ease-in-out .1s;
+  -moz-transition: transform ease-in-out .1s;
+  -ms-transition: transform ease-in-out .1s;
+  -o-transition: transform ease-in-out .1s;
+}
+
+.assortment-logo h2:hover {
+  filter: brightness(1.2);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-filter: brightness(1.2);
+}
